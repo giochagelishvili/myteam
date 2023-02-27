@@ -1,0 +1,222 @@
+/* GLOBAL STYLES */
+
+html
+{
+    /* 10px = 1rem */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* remove default margin and padding from every element */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* hide x-axis overflow for body */
+body
+{
+    overflow-x: hidden;
+}
+
+/* HEADER STYLES */
+
+/* on mobile devices header has padding on the sides */
+header
+{
+    padding: 0 3rem 0 1.2rem;
+}
+
+/* every text in header has margin-top of 7.1rem */
+.header-text-container
+{
+    margin-top: 7.1rem;
+}
+
+/* "the creative crew" h1 styles */
+#the-creative-crew
+{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+
+/* "who we are" and paragraph in header have same font-family and color */
+#who-we-are, #header-paragraph
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #000000;
+}
+
+/* "who we are" text styles */
+#who-we-are
+{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-transform: uppercase;
+
+    margin-top: 3.8rem;
+}
+
+/* header paragraph text styles */
+#header-paragraph
+{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+
+    margin-top: 1rem;
+}
+
+/* MAIN STYLES */
+
+/* this container contains data containers and wraps them around the page
+gap between elements is 2.7rem on mobile devices */
+.wrap-container
+{
+    padding: 0 1.9rem;
+    margin-top: 3.8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.7rem;
+}
+
+/* contains name, photo and position of the crew member */
+.data-container
+{
+    display: flex;
+}
+
+/* gives margin-top of 4.8rem to elements with class of margin-mobile */
+.margin-mobile
+{
+    margin-top: 4.8rem;
+}
+
+/* crew members photos are 13.8rem wide on mobile devices */
+.photo
+{
+    width: 13.8rem;
+}
+
+/* crew member's name styles */
+.name
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #000000;
+
+    margin-top: 1rem;
+}
+
+/* crew member's position styles */
+.position
+{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    color: #000000;
+
+    /* rotates text with 90deg */
+    writing-mode: vertical-rl;
+}
+
+/* FOOTER STYLES */
+
+/* footer has margin and padding on mobile devices */
+footer
+{
+    margin-top: 11.5rem;
+    padding-bottom: 2.4rem;
+}
+
+/* footer text styles */
+#footer-text
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+/* author name styles */
+#author
+{
+    color: #A9A9A9;
+}
+
+/* MEDIA STYLES */
+
+@media screen and (min-width: 1280px) {
+
+    /* body has padding on desktop devices */
+    body
+    {
+        padding: 11rem 24rem 0 24rem;
+    }
+
+    /* header text changes alignment on desktop devices */
+    .header-text-container
+    {
+        display: flex;
+        align-items: flex-start;
+        gap: 21.5rem;
+    }
+
+    /* reset the margins */
+    #who-we-are, #header-paragraph,
+    .header-text-container
+    {
+        margin: 0;
+    }
+
+    /* updated styles for header paragraph */
+    #header-paragraph
+    {
+        font-size: 18px;
+        line-height: 27px;
+        width: 44rem;
+    }
+
+    /* increased gap and margin for elements inside .wrap-container */
+    .wrap-container
+    {
+        gap: 6.7rem;
+        margin-top: 9.6rem;
+    }
+
+    /* increased width of photos */
+    .photo
+    {
+        width: 23.8rem;
+    }
+    
+    /* reset margin for margin mobile class */
+    .margin-mobile
+    {
+        margin: 0;
+    }
+
+    /* elements with class of margin-desktop have margin-top of 9.9rem */
+    .margin-desktop
+    {
+        margin-top: 9.9rem;
+    }
+}
