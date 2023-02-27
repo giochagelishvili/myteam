@@ -92,9 +92,10 @@ gap between elements is 2.7rem on mobile devices */
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2.7rem;
 
-    width: 33rem;
+    max-width: 51rem;
 }
 
 /* contains name, photo and position of the crew member */
@@ -213,7 +214,7 @@ footer
         gap: 6.7rem;
         margin-top: 9.6rem;
 
-        width: 93rem;
+        max-width: 93rem;
     }
 
     /* increased width of photos */
