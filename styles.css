@@ -77,6 +77,12 @@ header
 
 /* MAIN STYLES */
 
+main
+{
+    display: flex;
+    justify-content: center;
+}
+
 /* this container contains data containers and wraps them around the page
 gap between elements is 2.7rem on mobile devices */
 .wrap-container
@@ -87,6 +93,8 @@ gap between elements is 2.7rem on mobile devices */
     display: flex;
     flex-wrap: wrap;
     gap: 2.7rem;
+
+    width: 33rem;
 }
 
 /* contains name, photo and position of the crew member */
@@ -169,7 +177,11 @@ footer
     /* body has padding on desktop devices */
     body
     {
-        padding: 11rem 24rem 0 24rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 11rem;
     }
 
     /* header text changes alignment on desktop devices */
@@ -200,6 +212,8 @@ footer
     {
         gap: 6.7rem;
         margin-top: 9.6rem;
+
+        width: 93rem;
     }
 
     /* increased width of photos */
